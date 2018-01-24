@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<registry
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="plone">
+
+  <records
+      prefix="plone.resources/datagridfield"
+      interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++collective.z3cform.datagridfield/datagridfield.js</value>
+    <value key="css">
+      <element>++plone++collective.z3cform.datagridfield/datagridfield.css</element>
+    </value>
+  </records>
+
+  <records prefix="plone.bundles/datagridfield"
+           interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources">
+      <element>datagridfield</element>
+    </value>
+    <value key="enabled">True</value>
+    <value key="compile">True</value>
+    <value key="csscompilation">++plone++collective.z3cform.datagridfield/datagridfield-compiled.css</value>
+    <value key="jscompilation">++plone++collective.z3cform.datagridfield/datagridfield-compiled.js</value>
+    <value key="last_compilation">2018-01-24 00:00:00</value>
+    <value key="depends">plone</value>
+  </records>
+
+</registry>
